@@ -4,15 +4,9 @@ var router = express.Router();
 var path = require('path');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.sendFile(path.resolve('public/index.html'));
-});
+const routes = ["/", "/repos", "/repos/detail"]
 
-router.get('/repos', function(req, res, next) {
-  res.sendFile(path.resolve('public/index.html'));
-});
-
-router.get('/repos/detail', function(req, res, next) {
+router.get(routes, function(req, res) {
   res.sendFile(path.resolve('public/index.html'));
 });
 

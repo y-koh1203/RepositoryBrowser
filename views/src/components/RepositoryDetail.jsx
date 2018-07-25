@@ -68,6 +68,8 @@ class RepositoryDetail extends React.Component{
             message:'',　//Snackbarに表示するメッセージ
         };
 
+        // function = () => {} って形のarrow functionを使えるのであれば
+        // bindしなくていい！全て () => {} の形で書けばthisは参照できるようになると思うよ！
         this.dispatchPrevious = this.dispatchPrevious.bind(this);
         this.confirmAccess = this.confirmAccess.bind(this);
         this.handleAccess = this.handleAccess.bind(this);
