@@ -3,7 +3,7 @@ import { withRouter } from 'react-router';
 
 import Repos from '../components/Repos.jsx'
 
-import { setSelectRepository } from '../actions/index'
+import { setSelectRepository,deleteTask } from '../actions/index'
 
 function mapStateToProps(state) {
     return {

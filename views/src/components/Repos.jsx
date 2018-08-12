@@ -43,6 +43,10 @@ const styles = {
 
     centering: {
         textAlign: 'center',
+    },
+
+    card: {
+        backgroundColor: '#f2f2f2'
     }
 };
 
@@ -86,7 +90,7 @@ class Repos extends React.Component{
         for(let i= 0;i < repos.length;i++){
             list.push(
                 <div key={i} style={styles.listBox}>
-                    <Card>
+                    <Card style={styles.card}>
                         <CardContent>
                             <Typography color="textSecondary">
                                 {repos[i].owner.login}

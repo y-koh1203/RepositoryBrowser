@@ -53,6 +53,10 @@ const styles = {
 
     centering: {
         textAlign: 'center',
+    },
+
+    card: {
+        backgroundColor: '#f2f2f2'
     }
 };
 
@@ -117,7 +121,7 @@ class RepositoryDetail extends React.Component{
                         </Button>
                     </div>
                     <div style={styles.listBox}>
-                        <Card>
+                        <Card style={styles.card}>
                             <CardHeader
                                 avatar={
                                 <Avatar aria-label="Recipe">
